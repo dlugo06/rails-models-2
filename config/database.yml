@@ -7,6 +7,7 @@
 default: &default
   adapter: postgresql
   username: Diego
+  # password:
   # adapter: sqlite3
   # adapter: mysql2
   # username: wyncode
@@ -18,7 +19,7 @@ default: &default
 development:
   <<: *default
   # database: db/development.sqlite3
-  databse: wyncode-dev
+  database: wyncode-dev
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
