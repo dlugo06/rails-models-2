@@ -4,11 +4,20 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.4'
 gem "pg"
 
+<<<<<<< HEAD
 group :development do
   # Use sqlite3 as the database for Active Record
   # gem 'sqlite3'
   # gem 'pg'
 end
+=======
+# group :development do
+#   # Use sqlite3 as the database for Active Record
+#   # gem 'sqlite3'
+#   # gem "mysql2", "~> 0.3.18"
+#   gem "pg"
+# end
+>>>>>>> d1383d76fb17c2e63f6bd98a0810bae5ef6f5db2
 
 group :production do
   gem "rails_12factor"

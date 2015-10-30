@@ -8,6 +8,10 @@ default: &default
   adapter: postgresql
   username: Diego
   # adapter: sqlite3
+  # adapter: mysql2
+  # username: wyncode
+  # password: wyn10ftl28code
+  # host: 45.55.210.74
   pool: 5
   timeout: 5000
 
@@ -21,10 +25,8 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  # database: db/test.sqlite3
   database: wyncode-test
 
 production:
   <<: *default
-  # database: db/production.sqlite3
   database: wyncode-prod
