@@ -1,0 +1,10 @@
+
+<!-- <%# content_tag_for(:div, user) do %>
+  Email: <%# user.email %>, Name: <%# user.name %>
+<%# end %> -->
+
+<!-- The code above and below this are the same -->
+<%# debug user %>
+<%= div_for(user) do %>
+  Email: <%= user.email %>, Name: <%= user.name %>
+<% end %>

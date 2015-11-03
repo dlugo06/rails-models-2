@@ -1,0 +1,24 @@
+<h1>Welcome Home!</h1>
+<%= Time.now %>
+
+<%= image_tag('rails.png') %>
+
+<h4>Asset Helpers</h4>
+<%= image_url "rails.png" %>
+<%= javascript_url "application.js" %>
+<%= stylesheet_url "application.css" %>
+<br><br>
+<%= image_path "rails.png" %>
+<%= javascript_path "application.js" %>
+<%= stylesheet_path "application.css" %>
+<%# DO NOT DO THIS. MODELS SHOULD NOT BR CALLED IN THE VIEWS. Use Instance variables instead! User.take.email %>
+
+<%# @user.email %>
+<!-- comment in html -->
+<%# comment in erb %>
+
+<!-- Rendering Partials both of these work -->
+<!-- Note that in the first example you must indicate the path of the partial and not just the name -->
+<%# render partial: 'users/user', collection: @users %>
+<!-- The second example is cleaner but Rails is expecting the partial to be inside of a view folder by the same name as the instance variable. In this case: /users. -->
+<%= render @users %>
